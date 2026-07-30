@@ -1,0 +1,131 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html,body{ margin:0; padding:0; }
+body{ font-family:'Spectral',Georgia,serif; color:#26221e; background:#efece4; }
+.page{ position:relative; width:8.5in; height:11in; background:#efece4; overflow:hidden;
+       page-break-after:always; padding:0.8in 0.9in 0.7in 0.9in; }
+.page:last-child{ page-break-after:auto; }
+.eyebrow{ color:#b3122a; font-weight:700; letter-spacing:.28em; font-size:11px; }
+.rule-top{ width:46px; height:4px; background:#b3122a; margin-bottom:18px; }
+.cover-title{ font-family:'Playfair Display',Georgia,serif; font-weight:800; font-size:74px; line-height:.95; color:#231f1c; margin:8px 0 2px; }
+.cover-sub{ font-family:'Playfair Display',Georgia,serif; font-style:italic; font-size:28px; color:#6b645c; margin:0 0 10px; }
+.cover-meta{ color:#b3122a; font-size:13.5px; }
+.card{ border-radius:16px; overflow:hidden; box-shadow:0 8px 26px rgba(60,45,30,.13); background:#fff; margin:24px 0; }
+.card img{ display:block; width:100%; height:auto; }
+.cover-desc{ font-size:15px; line-height:1.6; color:#3a342e; max-width:6.2in; }
+.footer{ position:absolute; left:0.9in; right:0.9in; bottom:0.55in; display:flex; justify-content:space-between;
+         align-items:center; border-top:1px solid #d8d1c5; padding-top:8px; font-size:11px; color:#8a8175; }
+.footer .brand{ color:#b3122a; font-weight:700; }
+.rhead{ display:flex; justify-content:space-between; align-items:center; font-size:11px; color:#9a9184; letter-spacing:.06em;
+        border-bottom:1px solid #ddd6ca; padding-bottom:7px; margin-bottom:18px; }
+.backbtn{ color:#b3122a; font-weight:700; letter-spacing:.12em; font-size:9.5px; text-decoration:none;
+          border:1px solid #d6c6b3; border-radius:20px; padding:3px 11px; white-space:nowrap; }
+.theme{ color:#b3122a; font-weight:700; letter-spacing:.26em; font-size:12px; margin-bottom:8px; }
+.qrow{ display:flex; gap:14px; align-items:flex-start; }
+.qnum{ font-family:'Playfair Display',Georgia,serif; font-weight:800; font-size:40px; color:#b3122a; line-height:.9; }
+.qtext{ font-family:'Playfair Display',Georgia,serif; font-weight:700; font-size:22px; line-height:1.18; color:#231f1c; }
+.qcard{ border-radius:14px; overflow:hidden; box-shadow:0 7px 20px rgba(60,45,30,.12); margin:16px 0 12px; }
+.qcard img{ display:block; width:100%; height:auto; }
+.helps{ color:#b3122a; font-weight:700; letter-spacing:.24em; font-size:11.5px; margin:4px 0 6px; }
+.answer{ font-size:14px; line-height:1.6; color:#34302a; }
+.box{ margin-top:14px; background:#eae3d5; border-left:5px solid #b3122a; border-radius:4px;
+      padding:13px 18px; display:grid; grid-template-columns:1fr 1fr; gap:5px 26px; }
+.box .lab{ color:#b3122a; font-weight:700; letter-spacing:.14em; font-size:10px; }
+.box .val{ font-size:12px; color:#3a342e; margin-bottom:3px; }
+.pageno{ position:absolute; bottom:0.42in; left:0; right:0; text-align:center; font-size:11px; color:#a49a8c; }
+.toc-title{ font-family:'Playfair Display',Georgia,serif; font-weight:800; font-size:42px; color:#231f1c; margin:6px 0 3px; }
+.toc-sub{ font-size:12.5px; color:#6b645c; font-style:italic; margin-bottom:18px; }
+.toc-list{ display:flex; flex-direction:column; }
+.toc-item{ display:flex; align-items:baseline; gap:14px; text-decoration:none; color:inherit; padding:8px 0; border-bottom:1px solid #e2dbcf; }
+.toc-q{ font-family:'Playfair Display',Georgia,serif; font-weight:800; color:#b3122a; font-size:19px; width:42px; flex:none; }
+.toc-body{ flex:1; } .toc-theme{ display:block; color:#b3122a; font-weight:700; letter-spacing:.16em; font-size:9px; }
+.toc-qt{ display:block; font-family:'Playfair Display',Georgia,serif; font-size:15px; color:#231f1c; line-height:1.2; }
+.toc-pg{ color:#a49a8c; font-size:12px; flex:none; }
+</style></head><body><div class="page">
+      <div class="rule-top"></div><div class="eyebrow">AYASS BIOSCIENCE</div>
+      <div class="cover-title">BiRAGAS</div>
+      <div class="cover-sub">The Deployed Causal Engine Field Guide</div>
+      <div class="cover-meta">An Illustrated Guide &nbsp;&middot;&nbsp; How the Engine Was Built and How to Run It &nbsp;&middot;&nbsp; 10 Questions</div>
+      <div class="card"><img src="assets_engine/00_cover.jpg"/></div>
+      <div class="cover-desc">Inside the runnable BiRAGAS causal engine: how ten evidence modules wire into one machine that discovers cause from correlation, simulates interventions, refutes and abstains, and issues a per-target causal verdict, with 34 tests and a benchmark to prove it.</div>
+      <div class="footer"><span>Ayass Bioscience &nbsp;&middot;&nbsp; biragas@ayassbioscience.com</span><span class="brand">BiRAGAS causal platform</span></div>
+    </div><div class="page" id="toc"><div class="rule-top"></div><div class="eyebrow">CONTENTS</div>
+      <div class="toc-title">Table of Contents</div>
+      <div class="toc-sub">Click any question to jump to its page. Use the &#9650; Contents button on any page to return here.</div>
+      <div class="toc-list"><a class="toc-item" href="#q1"><span class="toc-q">Q1</span><span class="toc-body"><span class="toc-theme">THE PACKAGE</span><span class="toc-qt">What exactly is the deployed causal engine?</span></span><span class="toc-pg">3</span></a><a class="toc-item" href="#q2"><span class="toc-q">Q2</span><span class="toc-body"><span class="toc-theme">THE ARCHITECTURE</span><span class="toc-qt">What are the seven stages, end to end?</span></span><span class="toc-pg">4</span></a><a class="toc-item" href="#q3"><span class="toc-q">Q3</span><span class="toc-body"><span class="toc-theme">THE EVIDENCE BUS</span><span class="toc-qt">How do ten modules feed one engine?</span></span><span class="toc-pg">5</span></a><a class="toc-item" href="#q4"><span class="toc-q">Q4</span><span class="toc-body"><span class="toc-theme">DISCOVERY</span><span class="toc-qt">How does it find real causal edges, not correlations?</span></span><span class="toc-pg">6</span></a><a class="toc-item" href="#q5"><span class="toc-q">Q5</span><span class="toc-body"><span class="toc-theme">INTERVENTION</span><span class="toc-qt">How does it simulate inhibiting a target?</span></span><span class="toc-pg">7</span></a><a class="toc-item" href="#q6"><span class="toc-q">Q6</span><span class="toc-body"><span class="toc-theme">THE VERDICT</span><span class="toc-qt">How does it refute claims and stay honest?</span></span><span class="toc-pg">8</span></a><a class="toc-item" href="#q7"><span class="toc-q">Q7</span><span class="toc-body"><span class="toc-theme">DEPLOYMENT</span><span class="toc-qt">How does it wire into the live platform?</span></span><span class="toc-pg">9</span></a><a class="toc-item" href="#q8"><span class="toc-q">Q8</span><span class="toc-body"><span class="toc-theme">TESTING</span><span class="toc-qt">How do we know it works?</span></span><span class="toc-pg">10</span></a><a class="toc-item" href="#q9"><span class="toc-q">Q9</span><span class="toc-body"><span class="toc-theme">THE BENCHMARK</span><span class="toc-qt">How well does it recover causal structure?</span></span><span class="toc-pg">11</span></a><a class="toc-item" href="#q10"><span class="toc-q">Q10</span><span class="toc-body"><span class="toc-theme">RUNNING IT</span><span class="toc-qt">How do I run the full chain?</span></span><span class="toc-pg">12</span></a></div>
+      <div class="footer"><span>Ayass Bioscience &nbsp;&middot;&nbsp; biragas@ayassbioscience.com</span><span class="brand">BiRAGAS causal platform</span></div>
+    </div><div class="page" id="q1">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">THE PACKAGE</div>
+      <div class="qrow"><div class="qnum">Q1</div><div class="qtext">What exactly is the deployed causal engine?</div></div>
+      <div class="qcard"><img src="assets_engine/01_package.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">A runnable, integrated engine that turns BiRAGAS discovery from correlation-seeded into genuinely causal. It ships as engine code, real adapters for every module, verified integration patches, a JSON config, 34 automated tests, a benchmark, and a deployment guide. It replaces the |r|&gt;0.50 seeding and the hand-set 0.70 weight, keeps the excellent AIPW estimator, and adds a structural model, refutation and honest abstention.</div>
+      <div class="box"><div><div class="lab">WHAT IT IS</div><div class="val">A runnable causal engine</div></div><div><div class="lab">REPLACES</div><div class="val">Correlation seeding</div></div><div><div class="lab">KEEPS</div><div class="val">The AIPW estimator</div></div><div><div class="lab">SHIPS WITH</div><div class="val">34 tests, benchmark, patches</div></div></div><div class="pageno">3</div>
+    </div><div class="page" id="q2">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">THE ARCHITECTURE</div>
+      <div class="qrow"><div class="qnum">Q2</div><div class="qtext">What are the seven stages, end to end?</div></div>
+      <div class="qcard"><img src="assets_engine/02_stages.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Ingest every source onto one scale; build a conditional-independence skeleton; run the discovery ensemble over bootstraps for stability; anchor and orient with interventional data; prune with CI, FCI and stability; fuse into a calibrated per-edge posterior; then estimate, refute and abstain to a per-edge verdict. Scattered signals enter; a certified causal DAG comes out.</div>
+      <div class="box"><div><div class="lab">STAGES</div><div class="val">7 (ingest to verdict)</div></div><div><div class="lab">ENTRY</div><div class="val">Ten evidence sources</div></div><div><div class="lab">EXIT</div><div class="val">A certified causal DAG</div></div><div><div class="lab">UNCHANGED</div><div class="val">The gold-standard estimator</div></div></div><div class="pageno">4</div>
+    </div><div class="page" id="q3">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">THE EVIDENCE BUS</div>
+      <div class="qrow"><div class="qnum">Q3</div><div class="qtext">How do ten modules feed one engine?</div></div>
+      <div class="qcard"><img src="assets_engine/03_bus.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">One assembler reads all ten from named data keys, each on a common scale. Seven are edge-level (CRISPR-IV, L1000, MR, SIGNOR, DoRothEA, Granger, ensemble); three are node-level driver signals (DepMap, MAGeCK, PROGENy). Populate any subset; missing sources degrade gracefully and are never fabricated.</div>
+      <div class="box"><div><div class="lab">EDGE MODULES</div><div class="val">7 sources</div></div><div><div class="lab">NODE MODULES</div><div class="val">3 driver signals</div></div><div><div class="lab">CONTRACT</div><div class="val">One data key each</div></div><div><div class="lab">RULE</div><div class="val">Missing degrades, never fabricated</div></div></div><div class="pageno">5</div>
+    </div><div class="page" id="q4">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">DISCOVERY</div>
+      <div class="qrow"><div class="qnum">Q4</div><div class="qtext">How does it find real causal edges, not correlations?</div></div>
+      <div class="qcard"><img src="assets_engine/04_discovery.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Membership becomes a conditional-independence question, so a correlation running entirely through a confounder is removed. Then bootstrap stability selection keeps only the edges that recur across resamples, with a finite false-edge bound, replacing the guessed 0.70 weight with a guarantee. A kernel test option handles nonlinear signal.</div>
+      <div class="box"><div><div class="lab">SKELETON</div><div class="val">CI test: Fisher-Z or KCI</div></div><div><div class="lab">STABILITY</div><div class="val">Bootstrap, bounded false edges</div></div><div><div class="lab">REPLACES</div><div class="val">|r|&gt;0.50 and the x0.70 weight</div></div><div><div class="lab">RESULT</div><div class="val">Confounded edges pruned</div></div></div><div class="pageno">6</div>
+    </div><div class="page" id="q5">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">INTERVENTION</div>
+      <div class="qrow"><div class="qnum">Q5</div><div class="qtext">How does it simulate inhibiting a target?</div></div>
+      <div class="qcard"><img src="assets_engine/05_do.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">A structural causal model is fit on the certified graph, one equation per gene from its parents, so the engine answers do(X=x): clamp the target, propagate through the fitted equations, and read the effect on the disease program, with counterfactuals for individual profiles. This replaces the old linear path-flow that could never express a real intervention.</div>
+      <div class="box"><div><div class="lab">MODEL</div><div class="val">Fitted structural causal model</div></div><div><div class="lab">OPERATOR</div><div class="val">do(inhibit this target)</div></div><div><div class="lab">ALSO</div><div class="val">Counterfactuals per profile</div></div><div><div class="lab">REPLACES</div><div class="val">Linear Phase-4 flow</div></div></div><div class="pageno">7</div>
+    </div><div class="page" id="q6">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">THE VERDICT</div>
+      <div class="qrow"><div class="qnum">Q6</div><div class="qtext">How does it refute claims and stay honest?</div></div>
+      <div class="qcard"><img src="assets_engine/06_verdict.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Every effect is stress-tested with a placebo (permute the treatment and a real effect vanishes) and bootstrap sign-stability (a stable sign with a confidence interval excluding zero). Edges under latent confounding are declared not identified rather than reported. The pipeline closes with an honest per-edge verdict.</div>
+      <div class="box"><div><div class="lab">TESTS</div><div class="val">Placebo + bootstrap stability</div></div><div><div class="lab">ABSTAINS ON</div><div class="val">Latent confounding</div></div><div><div class="lab">VERDICT</div><div class="val">CAUSAL / REFUTED / NOT_IDENTIFIED</div></div><div><div class="lab">STANDARD</div><div class="val">Report only what survives</div></div></div><div class="pageno">8</div>
+    </div><div class="page" id="q7">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">DEPLOYMENT</div>
+      <div class="qrow"><div class="qnum">Q7</div><div class="qtext">How does it wire into the live platform?</div></div>
+      <div class="qcard"><img src="assets_engine/07_patches.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Two small, verified patches make the live graph builder decide membership by conditional independence and re-score by the fusion posterior; the heavy logic lives in a new module, so the production diff stays tiny and reversible behind config flags. The patches are generated from, and dry-run-applied to, the real source. A re-wiring, not a rewrite.</div>
+      <div class="box"><div><div class="lab">CHANGE</div><div class="val">2 minimal, verified patches</div></div><div><div class="lab">RISK</div><div class="val">Config-gated and reversible</div></div><div><div class="lab">PROOF</div><div class="val">Dry-run apply to real source</div></div><div><div class="lab">KEEPS</div><div class="val">The estimator untouched</div></div></div><div class="pageno">9</div>
+    </div><div class="page" id="q8">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">TESTING</div>
+      <div class="qrow"><div class="qnum">Q8</div><div class="qtext">How do we know it works?</div></div>
+      <div class="qcard"><img src="assets_engine/08_testing.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Thirty-four automated tests, seven smoke and twenty-seven integration, cover every module, the patch glue, the full config wiring, the node covariates, refutation, abstention and the end-to-end pipeline. Two real bugs were caught by these tests during the build: an invalid kernel-independence null and a silent orientation fallback, both fixed.</div>
+      <div class="box"><div><div class="lab">TESTS</div><div class="val">34: 7 smoke + 27 integration</div></div><div><div class="lab">COVERS</div><div class="val">Every module and the full pipeline</div></div><div><div class="lab">BUGS CAUGHT</div><div class="val">2, both fixed</div></div><div><div class="lab">STATE</div><div class="val">All passing</div></div></div><div class="pageno">10</div>
+    </div><div class="page" id="q9">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">THE BENCHMARK</div>
+      <div class="qrow"><div class="qnum">Q9</div><div class="qtext">How well does it recover causal structure?</div></div>
+      <div class="qcard"><img src="assets_engine/09_benchmark.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">On a known ground-truth network the correlation rule scores F1 0.485 with 17 structural errors; the engine recovers the exact skeleton (F1 1.0, 2 errors), and a perfect causal graph with zero errors once one interventional anchor is supplied. Correlation, to exact skeleton, to perfect DAG. The pipeline also refutes spurious edges.</div>
+      <div class="box"><div><div class="lab">BASELINE</div><div class="val">Correlation: F1 0.485, SHD 17</div></div><div><div class="lab">ENGINE</div><div class="val">F1 1.0, SHD 2</div></div><div><div class="lab">+ ONE ANCHOR</div><div class="val">SHD 0 (perfect DAG)</div></div><div><div class="lab">ALSO</div><div class="val">Refutes spurious edges</div></div></div><div class="pageno">11</div>
+    </div><div class="page" id="q10">
+      <div class="rhead"><span>BiRAGAS &middot; Deployed Causal Engine Field Guide</span><a class="backbtn" href="#toc">&#9650; Contents</a></div>
+      <div class="theme">RUNNING IT</div>
+      <div class="qrow"><div class="qnum">Q10</div><div class="qtext">How do I run the full chain?</div></div>
+      <div class="qcard"><img src="assets_engine/10_running.jpg"/></div>
+      <div class="helps">HOW BIRAGAS HELPS</div><div class="answer">Point the engine at your cohort expression and any module data, and one call runs discovery, model fitting, estimation, refutation and abstention to per-edge verdicts. Apply the two patches, set the config, populate the data keys, and validate with the tests and benchmark before a live run. Every claim traces to file and line; simulated data is labeled; nothing is fabricated.</div>
+      <div class="box"><div><div class="lab">ENTRY</div><div class="val">causal_pipeline(expression, evidence)</div></div><div><div class="lab">STEPS</div><div class="val">Patch, configure, populate, validate</div></div><div><div class="lab">OUTPUT</div><div class="val">Per-target causal verdicts</div></div><div><div class="lab">INTEGRITY</div><div class="val">File:line; nothing fabricated</div></div></div><div class="pageno">12</div>
+    </div></body></html>
